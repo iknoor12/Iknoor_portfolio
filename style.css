@@ -125,7 +125,7 @@ nav {
     font-size: 1.2rem;
     color: var(--text-secondary);
     margin-bottom: 30px;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -150,15 +150,16 @@ nav {
 .skills { padding: 100px 0; }
 
 .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    /* background-color: #38bdf8; */
 }
 
 .skill-tag {
     background: var(--card-bg);
-    padding: 10px 20px;
+    padding: 15px 5px;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.05);
     transition: var(--transition);
@@ -172,7 +173,9 @@ nav {
 }
 
 /* --- PROJECTS --- */
-.projects { padding: 100px 0; }
+.projects { 
+    padding: 100px 0; 
+}
 
 .project-grid {
     display: grid;
@@ -205,11 +208,20 @@ nav {
 }
 
 /* If using real images: */
-.card-img img { width: 100%; height: 100%; object-fit: cover; }
+.card-img img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
 
-.card-content { padding: 25px; }
+.card-content { 
+    padding: 25px; 
+}
 
-.card-content h3 { margin-bottom: 10px; font-size: 1.4rem; }
+.card-content h3 { 
+    margin-bottom: 10px; 
+    font-size: 1.4rem; 
+}
 
 .card-content p {
     color: var(--text-secondary);
@@ -217,7 +229,10 @@ nav {
     margin-bottom: 20px;
 }
 
-.card-links { display: flex; gap: 15px; }
+.card-links { 
+    display: flex; 
+    gap: 15px; 
+}
 
 .card-links a {
     font-size: 0.9rem;
@@ -225,10 +240,15 @@ nav {
     font-weight: 600;
 }
 
-.card-links a:hover { text-decoration: underline; }
+.card-links a:hover { 
+    text-decoration: underline; 
+}
 
 /* --- CONTACT --- */
-.contact { padding: 100px 0; text-align: center; }
+.contact { 
+    padding: 100px 0; 
+    text-align: center; 
+}
 
 .social-links {
     display: flex;
