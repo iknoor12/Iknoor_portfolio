@@ -235,7 +235,7 @@ nav {
 }
 
 .card-links a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--accent);
     font-weight: 600;
 }
