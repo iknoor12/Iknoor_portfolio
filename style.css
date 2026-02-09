@@ -328,6 +328,27 @@ nav {
     margin: 0;
 }
 
+.cert-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.cert-link:hover {
+    border-bottom: 1px solid var(--accent);
+    gap: 5px;
+}
+
+.cert-link i {
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
 
 footer {
     text-align: center;
