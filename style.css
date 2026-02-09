@@ -265,6 +265,70 @@ nav {
 
 .social-links a:hover { color: var(--accent); transform: scale(1.1); }
 
+
+/* --- LEARNING & ACHIEVEMENTS --- */
+.achievements { padding: 100px 0; background: rgba(0,0,0,0.2); }
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.icon-box {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.achievement-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+.achievement-content .date {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.achievement-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+
 footer {
     text-align: center;
     padding: 30px;
