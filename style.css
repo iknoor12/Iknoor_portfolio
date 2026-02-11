@@ -92,9 +92,10 @@ nav {
     color: var(--accent);
 }
 
+
 /* --- HERO SECTION --- */
 .hero {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,31 +147,6 @@ nav {
     box-shadow: 0 0 25px var(--accent-glow);
 }
 
-/* --- SKILLS --- */
-.skills { padding: 100px 0; }
-
-.skills-grid {
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;
-    /* background-color: #38bdf8; */
-}
-
-.skill-tag {
-    background: var(--card-bg);
-    padding: 15px 5px;
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: var(--transition);
-    cursor: default;
-}
-
-.skill-tag:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-2px);
-}
 
 /* --- PROJECTS --- */
 .projects { 
@@ -244,30 +220,37 @@ nav {
     text-decoration: underline; 
 }
 
-/* --- CONTACT --- */
-.contact { 
-    padding: 100px 0; 
-    text-align: center; 
+
+/* --- SKILLS --- */
+.skills { padding: 100px 0; }
+
+.skills-grid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.social-links a {
-    font-size: 2rem;
-    color: var(--text-secondary);
+.skill-tag {
+    background: var(--card-bg);
+    padding: 15px 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
     transition: var(--transition);
+    cursor: default;
 }
 
-.social-links a:hover { color: var(--accent); transform: scale(1.1); }
+.skill-tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
 
 
 /* --- LEARNING & ACHIEVEMENTS --- */
-.achievements { padding: 100px 0; background: rgba(0,0,0,0.2); }
+.achievements { 
+    padding: 100px 0; 
+}
 
 .achievement-grid {
     display: grid;
@@ -350,12 +333,35 @@ nav {
     margin-left: 5px;
 }
 
+/* --- CONTACT --- */
+.contact { 
+    padding: 100px 0; 
+    text-align: center; 
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.social-links a:hover { color: var(--accent); transform: scale(1.1); }
+
+
+/* --- FOOTER --- */
 footer {
     text-align: center;
     padding: 30px;
     color: var(--text-secondary);
     font-size: 0.8rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.213);
 }
 
 /* --- ANIMATION CLASS (JS) --- */
