@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
-        <div class="logo">IKNOOR Portfolio</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#contact">Contact</a>
+        <div class="logo">Personal Portfolio</div>
+        <div class="nav-currently">
+            <div class="nc-item building">
+                <span class="nc-dot" aria-hidden="true"></span>
+                <span class="nc-label">Building</span>
+                <span class="nc-text">Full-Stack &amp; AI-powered web applications</span>
+            </div>
+            <div class="nc-item learning">
+                <span class="nc-dot" aria-hidden="true"></span>
+                <span class="nc-label">Learning</span>
+                <span class="nc-text">Advanced React &amp; backend development</span>
+            </div>
         </div>
     </nav>
 
     <section class="hero" id="about">
-        <div class="container hero-content hidden">
-            <h1>Building Digital <br> <span style="color: var(--accent)">Experiences</span></h1>
-            <p>
-                Hi, I'm <span style="color: var(--accent)">Iknoor, a Full-Stack Developer</span> skilled in designing intuitive frontend interfaces 
-                and developing secure backend systems. Passionate about writing clean code, solving real-world problems, and continuously
-                improving technical and logical skills. Experienced in building complete web solutions from concept to deployment, with a 
-                focus on performance, scalability, and user experience.
-            </p>
-            <a href="portfolio.html" class="btn">View My Work</a>
+        <div class="container hero-grid">
+
+            <div class="hero-text hidden">
+                <h1>Building Digital <br><span>Experiences</span></h1>
+                <p class="hero-lead">Hi, I'm <em>Iknoor, a Full-Stack Developer</em> skilled in designing intuitive
+                    frontend interfaces
+                    and developing secure backend systems.</p>
+                <p class="hero-desc">Passionate about writing clean code, solving real-world problems, and continuously
+                    improving technical and logical skills. Experienced in building complete web solutions from concept
+                    to deployment, with a
+                    focus on performance, scalability, and user experience.</p>
+
+                <div class="hero-facts">
+                    <div class="fact"><small>Focus</small><strong>Frontend &amp; Backend</strong></div>
+                    <div class="fact"><small>Approach</small><strong>Clean, scalable code</strong></div>
+                    <div class="fact"><small>Location</small><strong>Himachal Pradesh, India</strong></div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="portfolio.html" class="btn">View My Work & details</a>
+                    <a href="portfolio.html#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+
+            <aside class="profile-card hidden">
+                <div class="profile-photo">
+                    <img src="profile-image.jpeg" alt="Portrait of Iknoor">
+                </div>
+                <div class="profile-info">
+                    <h3>Iknoor Vran</h3>
+                    <p>Full-Stack Developer</p>
+                    <span class="profile-status">Open to opportunities</span>
+                </div>
+            </aside>
+
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio. Built with HTML, CSS & JS.</p>
-    </footer>
-
     <script src="script.js"></script>
+
 </body>
+
 </html>
