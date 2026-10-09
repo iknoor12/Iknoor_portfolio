@@ -409,8 +409,8 @@ nav {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 50px;
 }
 
 .project-card {
